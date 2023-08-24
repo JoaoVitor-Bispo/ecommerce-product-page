@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Kumbh+Sans:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans';
+    box-sizing: border-box;
+}
+/* 
+@media screen and (min-width: 950px) and (max-width: 2000px) {
+    .menu {
+        display: inline-block;
+        height: 40px;
+    }
+    .main-image {
+        width: 300px;
+    }
+    .directions {
+        display: none;
+    }
+} */
+
+
+:root {
+    --orange: #FF7C1B;
+    --text-color: #68707D;
+}
+header {
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+.avatar {
+
+}
+.menu {
+    display: none;
+}
+.quantity-container {
+    background-color: #F7F8FD;
+    width: 100px;
+    padding: 15px 0;
+}
+.quantity-container > button {
+    background-color: #F7F8FD;
+    width: 10%;
+    border: none;
+} 
+.quantity-container > span {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    font-weight: bolder;
+    display: inline-block;
+}
+.main-image {
+    border-radius: 10px;
+}
+.directions {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.company, .discount {
+    color: var(--orange);
+    font-weight: bolder;
+}
+p {
+    color: var(--text-color);
+}
+.discount {
+    background-color: #FFEDE0;
+    padding: 5px;
+    margin-left: 5px;
+}
+.add-cart {
+    background-color: var(--orange);
+    color: white;
+    padding: 15px 0px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+}
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-size: 30px;
+}
+
+
