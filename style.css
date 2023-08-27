@@ -6,42 +6,103 @@
     font-family: 'Kumbh Sans';
     box-sizing: border-box;
 }
-/* 
-@media screen and (min-width: 950px) and (max-width: 2000px) {
-    .menu {
-        display: inline-block;
-        height: 40px;
-    }
-    .main-image {
-        width: 300px;
-    }
-    .directions {
-        display: none;
-    }
-} */
-
-
 :root {
     --orange: #FF7C1B;
     --text-color: #68707D;
 }
 header {
     display: flex;
-    /* justify-content: space-evenly; */
+    padding: 20px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 25px;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+nav {
+    display: none;
+    /* height: 100vh;
+    background-color: white; */
+}
+.user-info {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    gap: 15px;
 }
 .avatar {
-
+    width: 30px;
 }
-.menu {
+p {
+    font-weight: lighter;
+}
+.main-content {
+    text-align: left;
+    padding: 0px 25px 25px 25px;
+}
+h1 {
+    margin: 15px 0;
+}
+h2 {
+    margin: 25px 0;
+    display: inline-block;
+}
+.main-image-container {
+    text-align: center;
+}
+.main-image {
+    width: 80%;
+    max-width: 400px;
+    max-height: 350px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.thumbnails-container {
     display: none;
 }
+.directions {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    top: 40%;
+}
+.left {
+    left: 13%;
+}
+.right {
+    right: 13%;
+}
+.company, .discount {
+    color: var(--orange);
+    font-weight: bolder;
+}
+p {
+    color: var(--text-color);
+}
+.origin-price {
+    display: block;
+}
+.discount {
+    background-color: #FFEDE0;
+    padding: 5px;
+    margin-left: 5px;
+}
+.origin-price {
+    color: var(--text-color);
+    text-decoration: line-through;
+    margin: 10px 0px 15px 0px;
+}
 .quantity-container {
-    background-color: #F7F8FD;
-    width: 100px;
+    background-color: #dddddf;
+    width: 100%;
     padding: 15px 0;
 }
 .quantity-container > button {
-    background-color: #F7F8FD;
+    background-color: #dddddf;
     width: 10%;
     border: none;
 } 
@@ -52,26 +113,8 @@ header {
     font-weight: bolder;
     display: inline-block;
 }
-.main-image {
-    border-radius: 10px;
-}
-.directions {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    border: 1px solid black;
-}
-.company, .discount {
-    color: var(--orange);
-    font-weight: bolder;
-}
-p {
-    color: var(--text-color);
-}
-.discount {
-    background-color: #FFEDE0;
-    padding: 5px;
-    margin-left: 5px;
+input {
+    display: none;
 }
 .add-cart {
     background-color: var(--orange);
@@ -79,9 +122,11 @@ p {
     padding: 15px 0px;
     font-size: 16px;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 12px;
 }
-.material-icons-outlined {
+.menu {
     font-family: 'Material Icons';
     font-size: 30px;
 }

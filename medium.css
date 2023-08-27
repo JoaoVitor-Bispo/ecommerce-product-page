@@ -1,0 +1,94 @@
+@media screen and (min-width: 720px) and (max-width: 1000px) {
+    header {
+        width: 90%;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 100px;
+    }
+    nav {
+        display: block;
+        font-size: 14px;
+    }
+    nav > a {
+        color: var(--text-color);
+        margin: 0px 8px;
+        text-decoration: none;
+    }
+    .user-info {
+        margin: 0;
+    }
+    .menu {
+        display: none;
+    }
+    main {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px;
+    }
+    .main-content {
+        width: 45%;
+        margin-top: 25px;
+        padding: 0;
+    }
+    .company {
+        font-size: 10px;
+    }
+    p {
+        font-size: 13px;
+    }
+    h2 {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    .all-images {
+        width: 40%;
+    }
+    .main-image {
+        width: 100%;
+        max-height: auto;
+    }
+    .thumbnails-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .thumbnails-container > img {
+        width: 20%;
+        border-radius: 10px;
+    }
+    .discount {
+        font-size: 13px;
+    }
+    .origin-price {
+        margin: 10px 0px 15px 0px;
+        font-size: 13px;
+    }
+    .directions {
+        display: none;
+    }
+    .buttons {
+        display: flex;
+        gap: 10px;
+    }
+    .quantity-container {
+        padding: 0;
+        width: 30%;
+        display: flex;
+        border-radius: 10px;
+    }
+    .quantity-container > button {
+        width: 20%;
+    } 
+    .quantity-container > span {
+        width: 50%;
+        font-size: 12px;
+    }
+    .add-cart {
+        margin: 0;
+        width: 60%;
+        font-size: 12px; 
+    }
+} 

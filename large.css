@@ -1,0 +1,112 @@
+@media screen and (min-width: 1000px) and (max-width: 2180px) {
+    header {
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 150px;
+    }
+    nav {
+        display: block;
+        font-size: 18px;
+    }
+    nav > a {
+        color: var(--text-color);
+        margin: 0px 15px;
+        padding-bottom: 35px;
+        text-decoration: none;
+    }
+    .user-info {
+        margin: 0;
+        gap: 30px;
+    }
+    .avatar {
+        width: 50px;
+    }
+    .cart-icon {
+        width: 30px;
+    }
+    .menu {
+        display: none;
+    }
+    main {
+        display: flex;
+        justify-content: space-around;
+        padding: 90px;
+    }
+    .main-content {
+        width: 45%;
+        margin-top: 25px;
+        padding: 0;
+    }
+    .company {
+        font-size: 18px;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    p {
+        font-size: 15px;
+        margin: 20px 0px;
+        line-height: 1.4em;
+        font-weight: normal;
+    }
+    h2 {
+        font-size: 25px;
+        margin-bottom: 0;
+    }
+    .all-images {
+        width: 45%;
+    }
+    .main-image {
+        width: 100%;
+        max-height: none;
+    }
+    .thumbnails-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .thumbnails-container > img {
+        width: 20%;
+        max-width: 85px;
+        border-radius: 10px;
+    }
+    .discount {
+        font-size: 16px;
+    }
+    .origin-price {
+        display: block;
+        margin: 10px 0px;
+        font-size: 17px;
+    }
+    .directions {
+        display: none;
+    }
+    .buttons {
+        display: flex;
+        margin-top: 25px;
+        gap: 10px;
+    }
+    .quantity-container {
+        width: 30%;
+        display: flex;
+        padding: 0;
+    }
+    .quantity-container > button {
+        width: 20%;
+    } 
+    .quantity-container > span {
+        width: 40%;
+        font-size: 18px;
+    }
+    .add-cart {
+        width: 60%;
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
