@@ -15,7 +15,7 @@
     nav > a {
         color: var(--text-color);
         margin: 0px 15px;
-        padding-bottom: 35px;
+        padding-bottom: 33px;
         text-decoration: none;
     }
     .user-info {
@@ -33,11 +33,12 @@
     }
     main {
         display: flex;
-        justify-content: space-around;
         padding: 90px;
+        gap: 80px;
     }
     .main-content {
         width: 45%;
+        max-width: 450px;
         margin-top: 25px;
         padding: 0;
     }
@@ -59,21 +60,22 @@
     }
     .all-images {
         width: 45%;
+        max-width: 600px;
     }
     .main-image {
         width: 100%;
         max-height: none;
     }
     .thumbnails-container {
-        width: 100%;
+        width: 90%;
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 10px;
+        margin: auto;
     }
-    .thumbnails-container > img {
-        width: 20%;
+    .thumbnails-container > label {
         max-width: 85px;
-        border-radius: 10px;
+        display: inline-block;
     }
     .discount {
         font-size: 16px;

@@ -15,6 +15,7 @@
     nav > a {
         color: var(--text-color);
         margin: 0px 8px;
+        padding-bottom: 25px;
         text-decoration: none;
     }
     .user-info {
@@ -25,11 +26,11 @@
     }
     main {
         display: flex;
-        justify-content: space-around;
         padding: 40px;
+        gap: 60px;
     }
     .main-content {
-        width: 45%;
+        width: 350px;
         margin-top: 25px;
         padding: 0;
     }
@@ -37,7 +38,10 @@
         font-size: 10px;
     }
     p {
-        font-size: 13px;
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 28px;
     }
     h2 {
         font-size: 15px;
@@ -45,19 +49,17 @@
     }
     .all-images {
         width: 40%;
+        max-width: 400px;
     }
-    .main-image {
+    .images-slider {
         width: 100%;
         max-height: auto;
+        margin-top: 15px;
     }
     .thumbnails-container {
         width: 100%;
         display: flex;
         justify-content: space-between;
-    }
-    .thumbnails-container > img {
-        width: 20%;
-        border-radius: 10px;
     }
     .discount {
         font-size: 13px;

@@ -33,24 +33,33 @@
 
     <main>
         <div class="all-images">
-
-            <div class="main-image-container">
                 <button class="directions left">
                     <img src="images/icon-previous.svg" alt="">
                 </button>
 
-                <img src="images/image-product-1.jpg" alt="" class="main-image">
+                <div class="images-slider">
+                    <img src="images/image-product-1.jpg" alt="" class="main-image">
+                    <img src="images/image-product-2.jpg" alt="" class="other-images">
+                    <img src="images/image-product-3.jpg" alt="" class="other-images">
+                    <img src="images/image-product-4.jpg" alt="" class="other-images">
+                </div>
 
                 <button class="directions right">
                     <img src="images/icon-next.svg" alt="">
                 </button>
-            </div>
 
             <div class="thumbnails-container">
-                <img src="images/image-product-1-thumbnail.jpg" alt="">
-                <img src="images/image-product-2-thumbnail.jpg" alt="">
-                <img src="images/image-product-3-thumbnail.jpg" alt="">
-                <img src="images/image-product-4-thumbnail.jpg" alt="">
+                <input type="radio" name="radios" id="radio1" class="radios">
+                <label for="radio1"><img src="images/image-product-1-thumbnail.jpg" alt="" checked></label>
+
+                <input type="radio" name="radios" id="radio2" class="radios">
+                <label for="radio2"><img src="images/image-product-2-thumbnail.jpg" alt=""></label>
+
+                <input type="radio" name="radios" id="radio3" class="radios">
+                <label for="radio3"><img src="images/image-product-3-thumbnail.jpg" alt=""></label>
+                
+                <input type="radio" name="radios" id="radio4" class="radios">
+                <label for="radio4"><img src="images/image-product-4-thumbnail.jpg" alt=""></label>
             </div>
         </div>
 
