@@ -27,11 +27,13 @@
     main {
         display: flex;
         padding: 40px;
-        gap: 60px;
+        justify-content: center;
+        gap: 70px;
     }
     .main-content {
-        width: 350px;
-        margin-top: 25px;
+        width: 45%;
+        max-width: 350px;
+        margin-top: 40px;
         padding: 0;
     }
     .company {
@@ -48,8 +50,7 @@
         margin-bottom: 0;
     }
     .all-images {
-        width: 40%;
-        max-width: 400px;
+        width: 300px;
     }
     .images-slider {
         width: 100%;
