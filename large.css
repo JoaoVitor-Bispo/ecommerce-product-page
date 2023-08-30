@@ -1,6 +1,6 @@
 @media screen and (min-width: 1000px) and (max-width: 1920px) {
     header {
-        width: 80%;
+        width: 85%;
         margin: auto;
         align-items: center;
         justify-content: space-between;
@@ -33,8 +33,8 @@
     }
     main {
         display: flex;
-        padding: 90px 30px;
-        gap: 60px;
+        justify-content: center;
+        gap: 100px;
     }
     .main-content {
         width: 45%;
@@ -49,7 +49,7 @@
         font-size: 45px;
     }
     p {
-        font-size: 15px;
+        font-size: 16px;
         margin: 20px 0px;
         line-height: 1.4em;
         font-weight: normal;
@@ -58,23 +58,25 @@
         font-size: 25px;
         margin-bottom: 0;
     }
-    .all-images {
-        width: 50%;
-        max-width: 600px;
+    .images-slider {
+        width: 400px;
+        height: auto;
+        max-height: none;
+        max-width: none;
     }
     .main-image {
         width: 100%;
         max-height: none;
     }
     .thumbnails-container {
-        width: 90%;
+        width: 100%;
         display: flex;
         justify-content: center;
         gap: 10px;
         margin: auto;
     }
     .thumbnails-container > label {
-        max-width: 85px;
+        width: 90px;
         display: inline-block;
     }
     .discount {

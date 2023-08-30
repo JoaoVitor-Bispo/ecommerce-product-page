@@ -21,12 +21,25 @@
         <nav>
             <a href="#">Collections</a>
             <a href="#">Men</a>
+            <a href="#">Women</a>
             <a href="#">About</a>
             <a href="#">Contact</a>
         </nav>
 
         <div class="user-info">
             <img src="images/icon-cart.svg" alt="Cart's image" class="cart-icon">
+            <div class="card">
+                <h4>Cart</h4>
+                <p class="empty-message" style="text-align: center; color: black;">Cart's Empty</p>
+                <div class="card-content-box">
+                    <img src="images/image-product-1-thumbnail.jpg" alt="" class="card-img">
+
+                    <p>Fall limited edition Sneakers $125 x <span class="final-quantity"></span> <strong class="final-value"></strong></p>
+
+                    <img src="images/icon-delete.svg" alt="" class="delete">
+                </div>
+                <div class="div-button"><button>Checkout</button></div>
+            </div>
             <img src="images/image-avatar.png" alt="User's photo" class="avatar">
         </div>
     </header>
@@ -83,9 +96,9 @@
 
             <div class="buttons">
                 <div class="quantity-container">
-                    <button class="quantity-minus"><img src="images/icon-minus.svg" alt=""></button>
+                    <button class="quantity-minus quantity-button"><img src="images/icon-minus.svg" alt=""></button>
                         <span class="quantity">0</span>
-                    <button class="quantity-plus"><img src="images/icon-plus.svg" alt=""></button>
+                    <button class="quantity-plus quantity-button"><img src="images/icon-plus.svg" alt=""></button>
                 </div>
 
                 <button class="add-cart">Add to cart</button>

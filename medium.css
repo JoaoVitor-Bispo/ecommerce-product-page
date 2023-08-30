@@ -94,4 +94,8 @@
         width: 60%;
         font-size: 12px; 
     }
+    .newslider {
+        margin: auto;
+        margin-top: 130px;
+    }
 } 
