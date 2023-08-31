@@ -17,8 +17,8 @@ images_slider.addEventListener('click', (e) => {
     const div_container = document.createElement('div')
     const newClose_button = newSlider.children[0]
 
-    newSlider.children[1].className = 'new-directions new-left'
-    newSlider.children[6].className = 'new-directions new-right'
+    newSlider.children[1].className = 'new-directions directions left'
+    newSlider.children[6].className = 'new-directions directions right'
 
     newClose_button.classList.add('new-button')
     newSlider.classList.add('newslider')
@@ -61,6 +61,14 @@ addCart.addEventListener('click', (e) => {
 document.querySelector('.delete').addEventListener('click', e => {
     card_content.style.display = 'none'
     document.querySelector('.empty-message').style.display = 'block'
+})
+
+directions.map((element, index) => {
+    element.addEventListener('click', (e) => {
+        if(index == 1) {
+            e.target.parentNode.style.marginLeft = `-200%`
+        }
+    })
 })
 
 

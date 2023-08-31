@@ -10,6 +10,8 @@
     }
     nav {
         display: block;
+        padding: 0;
+        position: static;
         font-size: 14px;
     }
     nav > a {
@@ -18,6 +20,9 @@
         padding-bottom: 25px;
         text-decoration: none;
     }
+    nav > a:hover {
+        border-bottom: 3px solid var(--orange);
+    }    
     .user-info {
         margin: 0;
     }
@@ -36,9 +41,6 @@
         margin-top: 40px;
         padding: 0;
     }
-    .company {
-        font-size: 10px;
-    }
     p {
         font-size: 12px;
     }
@@ -55,10 +57,8 @@
     .images-slider {
         width: 100%;
         max-height: auto;
-        margin-top: 15px;
     }
     .thumbnails-container {
-        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -80,10 +80,10 @@
         padding: 0;
         width: 30%;
         display: flex;
-        border-radius: 10px;
     }
     .quantity-container > button {
         width: 20%;
+        padding: 0;
     } 
     .quantity-container > span {
         width: 50%;
@@ -97,5 +97,12 @@
     .newslider {
         margin: auto;
         margin-top: 130px;
+    }
+    .new-directions {
+        display: block;
+    }
+    .card {
+        top: 10%;
+        right: 5%; 
     }
 } 
