@@ -10,8 +10,6 @@
     }
     nav {
         display: block;
-        padding: 0;
-        position: static;
         font-size: 14px;
     }
     nav > a {
@@ -26,7 +24,7 @@
     .user-info {
         margin: 0;
     }
-    .menu {
+    .menu, .close-button {
         display: none;
     }
     main {
@@ -94,6 +92,10 @@
         width: 60%;
         font-size: 12px; 
     }
+    .new-container {
+        height: 100%;
+        width: 100vw;
+    }    
     .newslider {
         margin: auto;
         margin-top: 130px;

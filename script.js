@@ -13,21 +13,23 @@ const card_content = document.querySelector('.card-content-box')
 
 images_slider.addEventListener('click', (e) => {
 
+    const newButton = closeBtn.cloneNode(true)
     const newSlider = images_slider.cloneNode(true)
     const div_container = document.createElement('div')
-    const newClose_button = newSlider.children[0]
 
-    newSlider.children[1].className = 'new-directions directions left'
-    newSlider.children[6].className = 'new-directions directions right'
-
-    newClose_button.classList.add('new-button')
+    newSlider.children[0].className = 'new-directions directions left'
+    newSlider.children[5].className = 'new-directions directions right'
     newSlider.classList.add('newslider')
-    div_container.classList.add('new-container')
+    newSlider.appendChild(newButton)
 
+    newButton.style.display = 'block'
+        
+    div_container.classList.add('new-container')
     div_container.appendChild(newSlider)
+
     document.documentElement.appendChild(div_container)
 
-    newClose_button.addEventListener('click', (e) => div_container.remove())
+    newButton.addEventListener('click', (e) => div_container.remove())
 })
 
 let controller = 0
@@ -65,10 +67,23 @@ document.querySelector('.delete').addEventListener('click', e => {
 
 directions.map((element, index) => {
     element.addEventListener('click', (e) => {
+
         if(index == 1) {
-            e.target.parentNode.style.marginLeft = `-200%`
         }
     })
+})
+
+menu.addEventListener('click', e => {
+    const newNav = nav.cloneNode(true)
+    const div_container = document.createElement('div')
+    
+    newNav.classList.add('nav-div')
+    
+    div_container.classList.add('new-container')
+    div_container.appendChild(newNav)
+    document.documentElement.appendChild(div_container)
+
+    closeBtn.addEventListener('click', (e) => div_container.remove())
 })
 
 
