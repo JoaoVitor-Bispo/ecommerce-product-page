@@ -10,8 +10,37 @@ const quantity_buttons = [...document.querySelectorAll('.quantity-button')]
 const addCart = document.querySelector('.add-cart')
 const card = document.querySelector('.card')
 const card_content = document.querySelector('.card-content-box')
+const radios = [...document.querySelectorAll('.radios')]
+const main_image = document.querySelector('.main-image')
+
+const passSlide = (...teste) => {
+    let margin = Number(main_image.style.marginLeft)
+
+    teste.map((element, index) => {
+        element.addEventListener('click', e => {
+
+            if(margin == 300) {
+                margin = -100
+            }
+            else if(margin == 0) {
+                margin = 300
+            }
+
+            if(index == 0) {
+                margin -= 100
+            }
+            else {
+                margin += 100
+            }
+        
+            main_image.style.marginLeft = `-${margin}%`
+        })
+    })
+
+}
 
 images_slider.addEventListener('click', (e) => {
+    if(window.innerWidth < 720) return false
 
     const newButton = closeBtn.cloneNode(true)
     const newSlider = images_slider.cloneNode(true)
@@ -29,7 +58,9 @@ images_slider.addEventListener('click', (e) => {
 
     document.documentElement.appendChild(div_container)
 
+    passSlide(newSlider.children[0], newSlider.children[5])
     newButton.addEventListener('click', (e) => div_container.remove())
+
 })
 
 let controller = 0
@@ -65,14 +96,7 @@ document.querySelector('.delete').addEventListener('click', e => {
     document.querySelector('.empty-message').style.display = 'block'
 })
 
-directions.map((element, index) => {
-    element.addEventListener('click', (e) => {
-
-        if(index == 1) {
-        }
-    })
-})
-
+passSlide(directions)
 menu.addEventListener('click', e => {
     const newNav = nav.cloneNode(true)
     const div_container = document.createElement('div')
@@ -82,10 +106,17 @@ menu.addEventListener('click', e => {
     div_container.classList.add('new-container')
     div_container.appendChild(newNav)
     document.documentElement.appendChild(div_container)
-
-    closeBtn.addEventListener('click', (e) => div_container.remove())
+    
+    newNav.children[0].addEventListener('click', e => div_container.remove())
 })
 
+radios.map((element, index) => {
+    element.addEventListener('click', (e) => {
+        if(e.target.checked) {
+            main_image.style.marginLeft = `-${index * 100}%`
+        }
+    })
+})
 
 
 
