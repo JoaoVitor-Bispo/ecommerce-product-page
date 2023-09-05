@@ -105,6 +105,10 @@ menu.addEventListener('click', e => {
 radios.map((element, index) => {
     element.addEventListener('click', (e) => {
         if(e.target.checked) {
+            if(index == 0) {
+                main_image.style.marginLeft = `-${0}%`
+                return false
+            }
             main_image.style.marginLeft = `-${index * 100}%`
         }
     })
