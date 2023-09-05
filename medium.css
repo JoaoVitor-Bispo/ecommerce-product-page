@@ -31,7 +31,7 @@
         display: flex;
         padding: 40px;
         justify-content: center;
-        gap: 70px;
+        gap: 80px;
     }
     .main-content {
         width: 45%;
@@ -40,14 +40,13 @@
         padding: 0;
     }
     p {
-        font-size: 12px;
+        font-size: 13px;
     }
     h1 {
         font-size: 28px;
     }
     h2 {
         font-size: 15px;
-        margin-bottom: 0;
     }
     .all-images {
         width: 300px;
@@ -63,10 +62,6 @@
     .discount {
         font-size: 13px;
     }
-    .origin-price {
-        margin: 10px 0px 15px 0px;
-        font-size: 13px;
-    }
     .directions {
         display: none;
     }
@@ -75,7 +70,6 @@
         gap: 10px;
     }
     .quantity-container {
-        padding: 0;
         width: 30%;
         display: flex;
     }
@@ -97,8 +91,7 @@
         width: 100vw;
     }    
     .newslider {
-        margin: auto;
-        margin-top: 130px;
+        max-height: none;
     }
     .new-directions {
         display: block;

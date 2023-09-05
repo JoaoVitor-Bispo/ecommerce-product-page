@@ -2,7 +2,6 @@ const menu = document.querySelector('.menu');
 const nav = document.querySelector('nav');
 const directions = [...document.querySelectorAll('.directions')]
 const images_slider = document.querySelector('.images-slider')
-const thumbnails = document.querySelector('.thumbnails-container')
 const closeBtn = document.querySelector('.close-button')
 const cart = document.querySelector('.cart-icon')
 const quantity_product = document.querySelector('.quantity')
@@ -13,27 +12,18 @@ const card_content = document.querySelector('.card-content-box')
 const radios = [...document.querySelectorAll('.radios')]
 const main_image = document.querySelector('.main-image')
 
-const passSlide = (...teste) => {
+const passSlide = (teste, container) => {
     let margin = Number(main_image.style.marginLeft)
-
+    
     teste.map((element, index) => {
         element.addEventListener('click', e => {
+            
+            index == 0 ? margin -= 100 : margin += 100
 
-            if(margin == 300) {
-                margin = -100
-            }
-            else if(margin == 0) {
-                margin = 300
-            }
-
-            if(index == 0) {
-                margin -= 100
-            }
-            else {
-                margin += 100
-            }
+            if(margin > 300) margin = 0
+            else if(margin < 0) margin = 300
         
-            main_image.style.marginLeft = `-${margin}%`
+            container.style.marginLeft = `-${margin}%`
         })
     })
 
@@ -58,7 +48,8 @@ images_slider.addEventListener('click', (e) => {
 
     document.documentElement.appendChild(div_container)
 
-    passSlide(newSlider.children[0], newSlider.children[5])
+    passSlide([newSlider.children[0], newSlider.children[5]], newSlider.children[1])
+
     newButton.addEventListener('click', (e) => div_container.remove())
 
 })
@@ -96,7 +87,8 @@ document.querySelector('.delete').addEventListener('click', e => {
     document.querySelector('.empty-message').style.display = 'block'
 })
 
-passSlide(directions)
+passSlide(directions, main_image)
+
 menu.addEventListener('click', e => {
     const newNav = nav.cloneNode(true)
     const div_container = document.createElement('div')

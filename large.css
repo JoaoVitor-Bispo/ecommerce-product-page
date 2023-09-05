@@ -37,7 +37,7 @@
     main {
         display: flex;
         justify-content: center;
-        gap: 8%;
+        gap: 100px;
     }
     .main-content {
         width: 45%;
@@ -58,9 +58,7 @@
     }
     .images-slider {
         width: 400px;
-        height: auto;
         max-height: none;
-        max-width: none;
     }
     .thumbnails-container {
         display: flex;
@@ -71,7 +69,7 @@
         display: inline-block;
     }
     .origin-price {
-        font-size: 17px;
+        font-size: 15px;
     }
     .directions {
         display: none;
@@ -84,7 +82,6 @@
     .quantity-container {
         width: 30%;
         display: flex;
-        padding: 0;
     }
     .quantity-container > button {
         width: 20%;
@@ -98,7 +95,6 @@
         width: 60%;
         margin: 0;
         font-size: 16px;
-        font-weight: bold;
     }
     .new-container {
         height: 117%;

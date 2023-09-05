@@ -95,11 +95,8 @@ h1 {
     margin: 15px 0;
 }
 h2 {
-    margin: 25px 0;
+    margin: 25px 0 0 0;
     display: inline-block;
-}
-.all-images {
-    text-align: center;
 }
 .main-image {
     transition: margin-left 0.6s;
@@ -108,7 +105,7 @@ h2 {
     width: 80%;
     display: flex;
     max-width: 400px;
-    max-height: 300px;
+    max-height: 330px;
     border-radius: 15px;
     margin: 0 auto 20px auto;
     overflow-x: hidden;
@@ -119,7 +116,6 @@ h2 {
 }
 .images-slider img {
     width: 100%;
-    display: inline-block;
 }
 .thumbnails-container {
     display: none;
@@ -166,15 +162,13 @@ input[type="radio"]:checked + label {
 p {
     color: var(--text-color);
 }
-.origin-price {
-    display: block;
-}
 .discount {
     background-color: #FFEDE0;
     padding: 5px;
     margin-left: 5px;
 }
 .origin-price {
+    display: block;
     color: var(--text-color);
     text-decoration: line-through;
     margin: 10px 0px 15px 0px;
@@ -218,6 +212,7 @@ p {
     border-radius: 8px;
     width: 100%;
     margin-top: 12px;
+    font-weight: bold;
 }
 .add-cart:hover, .card button:hover {
     background-color: #c05f14;
@@ -255,6 +250,11 @@ p {
     padding: 20px;
     border-bottom: 1px solid lightgray;
 }
+.empty-message {
+    font-weight: bolder;
+    margin: 35px 0;
+    font-size: 16px;
+}
 .card-content-box {
     margin: 20px;
     height: 30%;
@@ -266,21 +266,22 @@ p {
 }
 .card-content-box:hover {
     background-color: rgba(211, 211, 211, 0.397);
+    cursor: default;
 }
 .card-img {
     border-radius: 8px;
     width: 60px;
 }
 .div-button {
-    margin-top: auto;
-    text-align: center;
-}
-.card button {
+    margin: auto;
     width: 250px;
 }
 .delete {
     width: 25px;
     height: 35px;
+}
+.delete:hover {
+    cursor: pointer;
 }
 .material-icons-outlined {
     font-family: 'Material Icons';
