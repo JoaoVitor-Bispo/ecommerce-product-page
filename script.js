@@ -12,8 +12,9 @@ const card_content = document.querySelector('.card-content-box')
 const radios = [...document.querySelectorAll('.radios')]
 const main_image = document.querySelector('.main-image')
 
+let margin = Number(main_image.style.marginLeft)
+
 const passSlide = (teste, container) => {
-    let margin = Number(main_image.style.marginLeft)
     
     teste.map((element, index) => {
         element.addEventListener('click', e => {
@@ -105,11 +106,8 @@ menu.addEventListener('click', e => {
 radios.map((element, index) => {
     element.addEventListener('click', (e) => {
         if(e.target.checked) {
-            if(index == 0) {
-                main_image.style.marginLeft = `-${0}%`
-                return false
-            }
-            main_image.style.marginLeft = `-${index * 100}%`
+            margin = index * 100
+            main_image.style.marginLeft = `-${margin}%`
         }
     })
 })
