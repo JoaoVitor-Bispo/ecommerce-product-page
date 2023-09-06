@@ -60,6 +60,7 @@ nav {
     margin-left: auto;
     align-items: center;
     gap: 15px;
+    position: relative;
 }
 .avatar {
     width: 35px;
@@ -82,6 +83,20 @@ nav {
     top: 1%;
     border: none;
     border-radius: 50%;
+}
+.notification {
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    font-weight: bolder;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: none;
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    text-align: center;
 }
 main {
     padding: 60px 30px;

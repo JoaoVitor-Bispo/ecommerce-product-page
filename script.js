@@ -79,8 +79,13 @@ addCart.addEventListener('click', (e) => {
         document.querySelector('.empty-message').style.display = 'none'
 
         document.querySelector('.final-quantity').innerHTML = `${controller}`
-        document.querySelector('.final-value').innerHTML = `$${controller * 125}`    
+        document.querySelector('.final-value').innerHTML = `$${controller * 125}`
+
+        document.querySelector('.notification').innerHTML = `${controller}`
+        document.querySelector('.notification').style.display = 'block'
+        return false
     }
+    document.querySelector('.notification').style.display = 'none'
 })
 
 document.querySelector('.delete').addEventListener('click', e => {
